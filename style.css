@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.content1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("night.jpg");
+    background-position: center;
+    
+    transition: 1.5s;
+}
+
+
+.content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 400px;
+    background-image: url("night.jpg");
+    background-position: center;
+    z-index: 2;
+    transition: 1.5s;
+}
+
+
+.content2:hover {
+    border-radius: 25px;
+    box-shadow: rgba(249, 249, 250, 0.4) 0px 8px 24px;
+}
+
+.content2:hover ~ .content1 {
+    filter: blur(6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
